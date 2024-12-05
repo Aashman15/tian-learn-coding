@@ -1,10 +1,13 @@
+@use "sass:map";
+
 $breakpoints: (
-  "medium": "30.0625em",
-  "large": "50.6875em",
+  "medium": "50em",
+  "large": "58.75em",
+  "extra-large": "92.8125em",
 );
 
 @mixin breakpoint($size) {
-  @media (min-width: map-get($breakpoints, $size)) {
+  @media (min-width: map.get($breakpoints, $size)) {
     @content;
   }
 }

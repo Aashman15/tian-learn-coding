@@ -1,0 +1,14 @@
+@use "../util" as *;
+
+.wrapper {
+  margin-inline: rem(15);
+
+  @include breakpoint(large) {
+    margin-inline: rem(80);
+  }
+
+  @include breakpoint(extra-large) {
+    max-width: rem(1485);
+    margin-inline: auto;
+  }
+}

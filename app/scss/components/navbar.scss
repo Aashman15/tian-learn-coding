@@ -1,0 +1,41 @@
+@use "../util/" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 40px;
+
+  .navlinks {
+    display: none;
+  }
+
+  @include breakpoint(medium) {
+    .navlinks {
+      display: flex;
+      align-items: center;
+      column-gap: rem(20);
+      list-style: none;
+
+      .navlink {
+        padding: rem(10);
+
+        .navlink-a {
+          font-size: rem(20);
+          font-weight: 500;
+        }
+
+        .navlink-a.active {
+          text-decoration: underline;
+          text-decoration-thickness: 5px;
+          text-decoration-color: var(--cr-primary);
+          text-underline-offset: 10px;
+        }
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+}
