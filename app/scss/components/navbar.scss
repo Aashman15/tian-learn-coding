@@ -24,13 +24,11 @@
           font-size: rem(20);
           font-weight: 500;
         }
+      }
 
-        .navlink-a.active {
-          text-decoration: underline;
-          text-decoration-thickness: 5px;
-          text-decoration-color: var(--cr-primary);
-          text-underline-offset: 10px;
-        }
+      .active {
+        color: red;
+        border-bottom: 5px solid var(--cr-primary);
       }
     }
 
