@@ -4,9 +4,16 @@
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .btn-primary {
   background-color: var(--cr-primary);
-  color: var(--white);
+  color: var(--cr-primary-button-text);
+}
+
+.btn-transparent {
+  padding: 11px 18px;
+  background-color: transparent;
+  border: 1px solid var(--cr-button-transparent-border);
 }

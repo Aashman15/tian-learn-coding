@@ -18,13 +18,21 @@
   </head>
   <body>
     <header class="navbar wrapper">
-      <img
-        class="logo"
-        src="/images/black-logo.svg"
-        width="82.46"
-        height="30.5"
-        alt=""
-      />
+      <picture>
+        <source
+          srcset="/images/white-logo.svg"
+          width="82.46"
+          height="30.5"
+          media="(prefers-color-scheme: dark)"
+        />
+        <img
+          class="logo"
+          src="/images/black-logo.svg"
+          width="82.46"
+          height="30.5"
+          alt=""
+        />
+      </picture>
       <ul class="navlinks">
         <li class="navlink active"><a class="navlink-a" href="#">Home</a></li>
         <li class="navlink"><a class="navlink-a" href="#">About Us</a></li>
@@ -34,22 +42,34 @@
           <button class="btn btn-primary">Contact Us</button>
         </li>
         <li class="navlink">
-          <img
-            class="sun"
-            src="/images/dark-sun.svg"
-            width="24"
-            height="24"
-            alt=""
-          />
+          <button class="btn btn-transparent">
+            <picture>
+              <source
+                srcset="/images/white-sun.svg"
+                width="24"
+                height="24"
+                media="(prefers-color-scheme: dark)"
+              />
+              <img
+                class="logo"
+                src="/images/dark-sun.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
+            </picture>
+          </button>
         </li>
       </ul>
-      <img
-        class="hamburger"
-        src="/images/black-hamburger.svg"
-        width="28"
-        height="28"
-        alt=""
-      />
+      <picture class="hamburger">
+        <source
+          srcset="/images/white-hamburger.svg"
+          width="28"
+          height="28"
+          media="(prefers-color-scheme: dark)"
+        />
+        <img src="/images/black-hamburger.svg" width="28" height="28" alt="" />
+      </picture>
     </header>
   </body>
 </html>
