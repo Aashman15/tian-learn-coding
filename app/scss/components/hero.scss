@@ -1,0 +1,9 @@
+@use "../util/" as *;
+
+.hero {
+  margin-top: rem(17.5);
+
+  &__text {
+    padding-block: rem(94.5);
+  }
+}

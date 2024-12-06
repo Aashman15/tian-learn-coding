@@ -6,6 +6,7 @@
   --light-button-transparent-border: #e5e5e5;
   --light-primary: #8b5cf6;
   --light-card-border: #e5e5e5;
+  --light-h: #262626;
   --white: #ffffff;
   --black: #000000;
 
@@ -23,6 +24,7 @@
   --cr-primary: var(--light-primary);
   --cr-primary-button-text: var(--white);
   --cr-button-transparent-border: var(--light-button-transparent-border);
+  --cr-h: var(--light-h);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,5 +34,6 @@
     --cr-a-href: var(--dark-text-1);
     --cr-primary-button-text: var(--dark-primary-button-text);
     --cr-button-transparent-border: var(--dark-button-transparent-border);
+    --cr-h: var(--white);
   }
 }

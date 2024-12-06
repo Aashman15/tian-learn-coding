@@ -1,6 +1,29 @@
+@use "../util/" as *;
+
 a,
 a:visited,
 a:active {
   text-decoration: none;
   color: var(--cr-a-href);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--cr-h);
+}
+
+h1 {
+  font-size: rem(38);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: rem(30);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: rem(24);
+  font-weight: 600;
 }
