@@ -18,21 +18,21 @@
   </head>
   <body>
     <header class="navbar wrapper">
-      <picture>
-        <source
-          srcset="/images/white-logo.svg"
+      <div>
+        <img
+          class="logo dark-source"
+          src="/images/white-logo.svg"
           width="82.46"
           height="30.5"
-          media="(prefers-color-scheme: dark)"
         />
         <img
-          class="logo"
+          class="logo light-source"
           src="/images/black-logo.svg"
           width="82.46"
           height="30.5"
           alt=""
         />
-      </picture>
+      </div>
       <ul class="navlinks">
         <li class="navlink active"><a class="navlink-a" href="#">Home</a></li>
         <li class="navlink"><a class="navlink-a" href="#">About Us</a></li>
@@ -42,22 +42,21 @@
           <button class="btn btn-primary">Contact Us</button>
         </li>
         <li class="navlink">
-          <button class="btn btn-transparent">
-            <picture>
-              <source
-                srcset="/images/white-sun.svg"
-                width="24"
-                height="24"
-                media="(prefers-color-scheme: dark)"
-              />
-              <img
-                class="logo"
-                src="/images/dark-sun.svg"
-                width="24"
-                height="24"
-                alt=""
-              />
-            </picture>
+          <button id="colorModeButton" class="btn btn-transparent">
+            <img
+              class="light-source"
+              src="/images/dark-sun.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
+            <img
+              class="dark-source"
+              src="/images/white-sun.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
           </button>
         </li>
       </ul>

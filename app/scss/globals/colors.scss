@@ -25,6 +25,7 @@
   --cr-primary-button-text: var(--white);
   --cr-button-transparent-border: var(--light-button-transparent-border);
   --cr-h: var(--light-h);
+  --cr-text-2: var(--light-text-2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,5 +36,26 @@
     --cr-primary-button-text: var(--dark-primary-button-text);
     --cr-button-transparent-border: var(--dark-button-transparent-border);
     --cr-h: var(--white);
+    --cr-text-2: var(var(--dark-text-2));
   }
+}
+
+body.light {
+  --cr-bg: var(--light-bg);
+  --cr-a-href: var(--light-a-href);
+  --cr-primary: var(--light-primary);
+  --cr-primary-button-text: var(--white);
+  --cr-button-transparent-border: var(--light-button-transparent-border);
+  --cr-h: var(--light-h);
+  --cr-text-2: var(--light-text-2);
+}
+
+body.dark {
+  --cr-bg: var(--dark-bg);
+  --cr-primary: var(--dark-primary);
+  --cr-a-href: var(--dark-text-1);
+  --cr-primary-button-text: var(--dark-primary-button-text);
+  --cr-button-transparent-border: var(--dark-button-transparent-border);
+  --cr-h: var(--white);
+  --cr-text-2: var(var(--dark-text-2));
 }
