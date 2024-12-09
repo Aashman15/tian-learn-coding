@@ -85,6 +85,29 @@
     </header>
     <main>
       <section class="hero wrapper">
+        <picture>
+          <source
+            class="hero__img"
+            srcset="/images/hero-image-large.png"
+            media="(min-width: 58.75em)"
+            width="1728"
+            height="1375"
+          />
+          <source
+            class="hero__img"
+            srcset="/images/hero-image-medium.png"
+            media="(min-width: 50em)"
+            width="1024"
+            height="1375"
+          />
+          <img
+            class="hero__img"
+            src="/images/hero-image-mobile.png"
+            width="430"
+            height="822"
+            alt=""
+          />
+        </picture>
         <div class="hero__text">
           <h1>Where the joy of learn meets the power of community</h1>
           <p>

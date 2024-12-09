@@ -2,10 +2,20 @@
 
 .hero {
   margin-top: rem(17.5);
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: -4% -16%;
+  }
 
   &__text {
     padding-block: rem(94.5);
     text-align: center;
+    position: relative;
+    z-index: 1;
 
     p {
       margin-block: rem(35);
@@ -39,11 +49,13 @@
   }
 
   &__cards {
-    padding-block: rem(48);
+    padding-block: rem(80);
     color: var(--white);
     display: flex;
     flex-direction: column;
     gap: rem(15);
+    position: relative;
+    z-index: 1;
 
     .hero_card {
       background-color: var(--black);
@@ -77,6 +89,12 @@
 
     &__cards > * {
       flex: 1;
+    }
+
+    &__img {
+      top: -5px;
+      translate: -7% -12%;
+      width: 100vw;
     }
   }
 }

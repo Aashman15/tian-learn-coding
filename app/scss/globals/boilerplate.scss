@@ -14,6 +14,12 @@ html {
 body {
   font-family: "Inter Tight", serif;
   background-color: var(--cr-bg);
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 .display-none {
