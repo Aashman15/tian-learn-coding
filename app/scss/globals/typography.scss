@@ -31,3 +31,9 @@ h3 {
 p {
   color: var(--cr-text-2);
 }
+
+@include breakpoint(medium) {
+  h1 {
+    font-size: rem(80);
+  }
+}

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tian - Learn Coding</title>
 
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,15 +66,22 @@
           </button>
         </li>
       </ul>
-      <picture class="hamburger">
-        <source
-          srcset="/images/white-hamburger.svg"
+      <div class="hamburger">
+        <img
+          class="dark-source"
+          src="/images/white-hamburger.svg"
           width="28"
           height="28"
-          media="(prefers-color-scheme: dark)"
+          alt=""
         />
-        <img src="/images/black-hamburger.svg" width="28" height="28" alt="" />
-      </picture>
+        <img
+          class="light-source"
+          src="/images/black-hamburger.svg"
+          width="28"
+          height="28"
+          alt=""
+        />
+      </div>
     </header>
     <main>
       <section class="hero wrapper">
@@ -78,36 +91,32 @@
             Dive deep in immersive, interactive small groups. Expand horizons,
             engage in discussions, and elevate your learning journey with us.
           </p>
-          <div>
+          <div class="hero__text__buttons">
             <button class="btn btn-primary">Start Your Travel</button>
-            <button class="btn btn-border-less">Watch video</button>
+            <button class="btn btn-transparent-borderless">
+              Watch video <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
         </div>
-        <div class="hero_cards">
+        <div class="hero__cards">
           <div class="hero_card">
-            <div class="hero_card_header">
-              <img
-                src="/images/explore-topic-icon.svg"
-                width="28"
-                height="28"
-                alt=""
-              />
-              <h3>Explore topics</h3>
-            </div>
+            <img
+              src="/images/explore-topic-icon.svg"
+              width="28"
+              height="28"
+              alt=""
+            />
+            <h3>Explore topics</h3>
             <p>Explore our selection of courses in development</p>
           </div>
           <div class="hero_card">
-            <div class="hero_card_header">
-              <img src="/images/people.svg" width="28" height="28" alt="" />
-              <h3>Meet new friends</h3>
-            </div>
+            <img src="/images/people.svg" width="28" height="28" alt="" />
+            <h3>Meet new friends</h3>
             <p>Join the network with million of students and learn</p>
           </div>
           <div class="hero_card">
-            <div class="hero_card_header">
-              <img src="/images/people.svg" width="28" height="28" alt="" />
-              <h3>Learn code</h3>
-            </div>
+            <img src="/images/people.svg" width="28" height="28" alt="" />
+            <h3>Learn code</h3>
             <p>Learn all about code and become in a developer</p>
           </div>
         </div>
