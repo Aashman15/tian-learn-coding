@@ -101,6 +101,14 @@
     &__img {
       top: -5px;
       translate: -11% -11%;
+      width: auto;
+    }
+  }
+
+  @include breakpoint(extra-large) {
+    &__img {
+      top: -5px;
+      translate: -6% -11%;
     }
   }
 
