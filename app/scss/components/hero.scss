@@ -6,7 +6,7 @@
 
   &__img {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: auto;
     top: 0;
     left: 0;
@@ -93,8 +93,14 @@
   @include breakpoint(medium) {
     &__img {
       top: -5px;
+      translate: -4% -11%;
+    }
+  }
+
+  @include breakpoint(large) {
+    &__img {
+      top: -5px;
       translate: -11% -11%;
-      width: 100vw;
     }
   }
 
