@@ -82,6 +82,14 @@
   }
 
   @include breakpoint(medium) {
+    &__img {
+      top: -5px;
+      translate: -7% -12%;
+      width: 100vw;
+    }
+  }
+
+  @include breakpoint(large) {
     &__cards {
       flex-direction: row;
       flex-wrap: wrap;
@@ -89,12 +97,7 @@
 
     &__cards > * {
       flex: 1;
-    }
-
-    &__img {
-      top: -5px;
-      translate: -7% -12%;
-      width: 100vw;
+      max-width: rem(486);
     }
   }
 }

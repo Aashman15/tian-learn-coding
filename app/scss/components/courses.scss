@@ -1,0 +1,66 @@
+@use "../util/" as *;
+
+.popular-courses {
+  padding: rem(48) rem(38);
+
+  h2 {
+    font-size: rem(38);
+    margin-bottom: rem(40);
+    text-align: center;
+  }
+
+  .courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: rem(24);
+
+    .course {
+      border: 1px solid var(--cr-card-border);
+      border-radius: rem(16);
+      padding: rem(16);
+      font-size: rem(14);
+      max-width: rem(354.5);
+      min-width: rem(354.5);
+
+      h3 {
+        font-size: rem(24);
+        margin-block: rem(24) rem(8);
+      }
+
+      .duration {
+        display: flex;
+        gap: rem(5);
+        margin-block: rem(20) rem(24);
+      }
+
+      .duration img {
+        height: 17px;
+        width: 17px;
+      }
+
+      .duration span {
+        color: var(--cr-text-1);
+      }
+
+      .discount {
+        margin-bottom: rem(8);
+      }
+
+      img {
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    .courses {
+      flex-wrap: nowrap;
+    }
+  }
+}
