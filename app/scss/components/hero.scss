@@ -6,9 +6,11 @@
 
   &__img {
     position: absolute;
+    width: 100%;
+    height: auto;
     top: 0;
     left: 0;
-    translate: -4% -16%;
+    translate: -4% -18%;
   }
 
   &__text {
@@ -48,8 +50,15 @@
     }
   }
 
+  @include breakpoint(large) {
+    &__text {
+      padding-block: rem(139);
+    }
+  }
+
   &__cards {
-    padding-block: rem(80);
+    padding-block: rem(48);
+
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -84,13 +93,14 @@
   @include breakpoint(medium) {
     &__img {
       top: -5px;
-      translate: -7% -12%;
+      translate: -11% -11%;
       width: 100vw;
     }
   }
 
   @include breakpoint(large) {
     &__cards {
+      padding-block: rem(128);
       flex-direction: row;
       flex-wrap: wrap;
     }

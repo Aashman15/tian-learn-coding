@@ -64,3 +64,9 @@
     }
   }
 }
+
+@include breakpoint(large) {
+  .popular-courses {
+    padding-block: rem(128);
+  }
+}
