@@ -1,0 +1,66 @@
+@use "../util/" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(96);
+  padding-block: rem(100);
+
+  .logo-and-social {
+    .social {
+      display: flex;
+      column-gap: rem(12);
+      margin-top: rem(60);
+    }
+  }
+
+  .list-of-lists {
+    display: flex;
+    column-gap: rem(85);
+
+    .list h2 {
+      font-size: rem(28);
+      font-weight: 600;
+    }
+
+    .list ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(30);
+      margin-top: rem(50);
+
+      li {
+        font-size: rem(24);
+        color: var(--cr-footer-li);
+      }
+    }
+
+    .company {
+      display: none;
+    }
+
+    @include breakpoint(medium) {
+      .company {
+        display: block;
+      }
+    }
+  }
+
+  @include breakpoint(large) {
+    .list-of-lists {
+      column-gap: rem(130);
+    }
+  }
+}
+
+@include breakpoint(extra-large) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .list-of-lists {
+      width: rem(800);
+    }
+  }
+}

@@ -8,6 +8,7 @@
   --light-card-border: #e5e5e5;
   --light-h: #262626;
   --light-feature-list-bg: #f5f5f5;
+  --light-footer-li: var(--light-a-href);
   --white: #ffffff;
   --black: #000000;
 
@@ -21,6 +22,7 @@
   --dark-card-border: #737373;
   --dark-button-transparent-border: #737373;
   --dark-feature-list-bg: #262626;
+  --dark-footer-li: var(--white);
 
   --cr-bg: var(--light-bg);
   --cr-a-href: var(--light-a-href);
@@ -32,6 +34,7 @@
   --cr-text-2: var(--light-text-2);
   --cr-card-border: var(--light-card-border);
   --cr-feature-list-bg: var(--light-feature-list-bg);
+  --cr-footer-li: var(--light-footer-li);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +48,7 @@
     --cr-text-2: var(var(--dark-text-2));
     --cr-card-border: var(--dark-card-border);
     --cr-feature-list-bg: var(--dark-feature-list-bg);
+    --cr-footer-li: var(--dark-footer-li);
   }
 }
 
@@ -59,6 +63,7 @@ body.light {
   --cr-text-1: var(--light-text-1);
   --cr-card-border: var(--light-card-border);
   --cr-feature-list-bg: var(--light-feature-list-bg);
+  --cr-footer-li: var(--light-footer-li);
 }
 
 body.dark {
@@ -72,4 +77,5 @@ body.dark {
   --cr-text-2: var(var(--dark-text-2));
   --cr-card-border: var(--dark-card-border);
   --cr-feature-list-bg: var(--dark-feature-list-bg);
+  --cr-footer-li: var(--dark-footer-li);
 }
